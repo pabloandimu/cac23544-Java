@@ -12,6 +12,8 @@ public class MainLogger {
 		//LoggerManager lm = new LoggerManager(target); // esto devuelve un ILogger
 		//ILogger logger = lm.getLogger(); // esto devuelve el ILogger y sólo puedo ver su metodo log();
 		
+		// ESTO DE ABAJO CONSTRUYENDO UN VECTOR QUE MAPEE TODAS LAS OPCIONES Y LAS MUESTRA EN UN ARRAY
+		
 		ILogger[] loggers = new ILogger[5]; // tengo un Vector (o Array) de interfaces.
 		loggers[0] = LoggerManager.getLogger("A"); // esto devuelve una interfaz
 		loggers[1] = LoggerManager.getLogger("B"); // esto devuelve otra interfaz
