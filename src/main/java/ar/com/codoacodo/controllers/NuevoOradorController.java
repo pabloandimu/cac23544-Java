@@ -113,8 +113,8 @@ public class NuevoOradorController extends HttpServlet{
 		Orador orador = this.repository.getById(Long.parseLong(id));
 		
 		//ahora actualizo los datos
-		orador.setApellido(oradorRequest.getApellido());
 		orador.setNombre(oradorRequest.getNombre());
+		orador.setApellido(oradorRequest.getApellido());		
 		orador.setMail(oradorRequest.getEmail());
 		orador.setTema(oradorRequest.getTema());
 		
